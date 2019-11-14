@@ -1,0 +1,26 @@
+package finalproject;
+
+import java.util.Scanner;
+public class create {
+
+private static final int Type1 = 0;
+
+public static void main(String[] args) {
+
+System.out.print("Welcome to Shea Curl");
+Scanner input = new Scanner (System.in);
+
+System.out.print( "Enter hair type: ");
+
+int a = input.nextInt(); 
+System.out.print(a);
+
+if (a == Type1 )
+	System.out.print("Straight hair");
+
+
+	}
+
+}
+
+                                                
