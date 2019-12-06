@@ -13,11 +13,13 @@ public class createit {
 			// prints welcome message 
 		    
 		    Scanner scan = new Scanner(System.in);
-		    System.out.println("Enter your name: ");
+		    System.out.println("Enter your first name: ");
 		    message = scan.nextLine();
-		    System.out.println("Enter your last name:");
+		    
+		    System.out.println("Enter your last name: ");
 		    message = scan.nextLine();
-		   
+		    // generates system to ask for customer name 
+		    
 		    Scanner input = new Scanner ( System.in);
 		    System.out.print("Enter a type:"); 
 			int hairtype = input.nextInt();
@@ -43,7 +45,7 @@ public class createit {
 			
 			
 			if(answer == 1)
-				//conditional operatos are assigned to number
+				//conditional operators are assigned to number
 			{
 				System.out.print("If Straight hair use TREsemme\n");
 				System.out.print("If Wavy hair use LUXorganics\n");
@@ -58,6 +60,9 @@ public class createit {
 			}
 			}
 				
+			
+	}
+	
 			
 	}
 
