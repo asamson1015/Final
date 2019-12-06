@@ -1,15 +1,17 @@
 package finalproject;
 
 import java.util.Scanner;
+//new scanner
 
 public class createit {
-
+	
 	public static void main(String[] args) {
 		 String[] Types = {"Straighthair", "Wavyhair", "Curlyhair","Kinkyhair"};
-			
+		 
 			System.out.println("Welcome to Shea Curl!");
 		    String message;
-
+			// prints welcome message 
+		    
 		    Scanner scan = new Scanner(System.in);
 		    System.out.println("Enter your name: ");
 		    message = scan.nextLine();
@@ -17,17 +19,46 @@ public class createit {
 		    Scanner input = new Scanner ( System.in);
 		    System.out.print("Enter a type:"); 
 			int hairtype = input.nextInt();
-			
+			//enter the specific hair style that matches you
 			switch ( hairtype) {
-			case 1 : System.out.print( "Straighthair"); break ;
-			case 2 : System.out.print("Wavyhair"); break ;
-			case 3 : System.out.print("Curlyhair"); break ;
-			case 4 : System.out.print("Kinkyhair"); break ;
+			
+			//switch statement for the different types of hair
+			
+			case 1 : System.out.print( "Straighthair\n"); break ;
+			case 2 : System.out.print("Wavyhair\n"); break ;
+			case 3 : System.out.print("Curlyhair\n"); break ;
+			case 4 : System.out.print("Kinkyhair\n"); break ;
+			default: System.out.print("Error : invalid status\n" );
+			break;
+			}
+			//allows customer to print their hair type
+			
+			System.out.println("Would you like to see what products match you? 1 - yes/ 2 -no");
+			
+			 // question on whether the person would like suggestions 
+			int answer = input.nextInt();
+			//generates system for answer
+			
+			
+			if(answer == 1)
+				//conditional operatos are assigned to number
+			{
+				System.out.print("If Straight hair use TREsemme\n");
+				System.out.print("If Wavy hair use LUXorganics\n");
+				System.out.print("If Curly hair use SheaMoisturre\n");
+				System.out.print("If Kinky hair use Cantu\n");
+	//provides product suggestions
+			}
+			else
+			{
+				System.out.print("Thank you, have a good day");
+				//system exists
+			}
+			}
+				
 			
 	}
 
-	}
-}
 
 
 
