@@ -2,35 +2,33 @@ package finalproject;
 
 import java.util.Scanner;
 
-public class curlstyle {
-	
-	private static final double Straight = 0;
-	private static final double Wavy = 0;
-	private static final double Curly = 0;
-	private static final double Kinky = 0;
+public class createit {
 
 	public static void main(String[] args) {
-	        String[] Types = {"Type1", "Type2", "Type3","Type4"};
-	       
-	        double type1 = 0;
-	        double type2 = 0;
-	        double type3 = 0;
-	        double type4 = 0;
+		 String[] Types = {"Straighthair", "Wavyhair", "Curlyhair","Kinkyhair"};
+			
+			System.out.println("Welcome to Shea Curl!");
+		    String message;
 
-	        System.out.println("Welcome to Shea Curl!");
-	        String message;
-	        
-	        Scanner scan = new Scanner(System.in);
-	        System.out.println("Enter your name: ");
-	        message = scan.nextLine();
-	        System.out.println("Enter a hair type: ");
-	        message = scan.nextLine();
-	        
-	        Scanner console = new Scanner(System.in);
-	        
-	        
-	        }
+		    Scanner scan = new Scanner(System.in);
+		    System.out.println("Enter your name: ");
+		    message = scan.nextLine();
+		   
+		    Scanner input = new Scanner ( System.in);
+		    System.out.print("Enter a type:"); 
+			int hairtype = input.nextInt();
+			
+			switch ( hairtype) {
+			case 1 : System.out.print( "Straighthair"); break ;
+			case 2 : System.out.print("Wavyhair"); break ;
+			case 3 : System.out.print("Curlyhair"); break ;
+			case 4 : System.out.print("Kinkyhair"); break ;
+			
 	}
+
+	}
+}
+
 
 
 
